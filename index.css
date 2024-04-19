@@ -1,0 +1,760 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+section{
+    padding: 6rem auto;
+    margin: 5rem 0;
+  }
+
+.icon_infos{
+    margin-top: 2rem;
+}
+.icon_infos a img{
+    width: 2rem;
+    height: 2rem;
+    background: var(--color-blanc);
+    border-radius: 3em;
+}
+.icon_infos a{
+    color: #FFFFFF;
+    font-size: 2rem;
+}
+/*thème de couleur*/
+
+:root{
+    --color-primary : #121212;
+    --color-bleu : #06B9DA;
+    --color-jaune : #FCD402;
+    --color-black : black;
+    --color-white : white;
+
+    --container-width-lg : 84%;
+    --container-width-md : 90%;
+    --container-width-sm : 92%;
+
+    --transition:all 400ms ease;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat';
+    color: var(--color-bg-1);
+    background: var(--color-primary);
+    line-height: 1.7;
+}
+
+h3{
+    line-height: 1.1;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 24px;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+a{
+    color: var(--color-noir);
+    
+}
+
+
+.container{
+    width: var(--container-width-lg);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+
+/*========================================*/
+nav{
+    height: 5rem;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    color: white;
+}
+
+nav button{
+    display: none;
+}
+
+.window-scrolled{
+    background: var(--color-primary);
+    border-bottom: 0.2rem solid var(--color-bg-3);
+    height: 7rem;
+}
+
+.nav_logo{
+    width: 4rem;
+}
+
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_menu{
+    display: flex;
+    gap: 2rem;
+    font-size: 14;
+}
+.nav_menu li:hover{
+    color: var(--color-jaune);
+}
+
+.nav-contact{
+    background-color: #06B9DA;
+    padding: 12px 32px;
+    border-radius: 10px;
+}
+
+/*==================END NAV======================*/
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./IMAGES/background.jpg');
+    background-size: cover;
+    
+}
+
+.container_header{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.container_header p{
+    padding: 4rem 0rem 4rem 0rem;
+}
+.download_brochure{
+    background-color: var(--color-bleu);
+    padding: 12px 32px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.name_bleu{
+    color: var(--color-bleu);
+}
+.name_jaune{
+    color: var(--color-jaune);
+}
+
+/*==============section 1===============*/
+.container_message_a{
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.text_desc_MA h2{
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.text_desc_MA p{
+    padding: 2rem 0rem 2rem 0rem;
+    font-weight: 100;
+}
+
+
+.image_MA img{
+    margin-top: -5rem;
+}
+
+.text_desc_MA a{
+    color: var(--color-jaune);
+    font-weight: bold;
+}
+
+
+
+/*================section 2==============*/
+.container_africa{
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.message_africa h2{
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+
+.image_ange img{
+    margin-top: -5rem;
+}
+.message_africa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.message_africa p{
+    padding: 2rem 0rem 2rem 0rem;
+    font-weight: 100;
+}
+
+.message_africa a{
+    color: var(--color-jaune);
+    font-weight: bold;
+}
+
+/*=====section3==========*/
+
+.container_graphe{
+    text-align: center;
+    color: white;
+}
+.container_graphe h2{
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.container_graphe p{
+    padding: 2rem 0rem 2rem 0rem;
+    font-weight: 100;
+}
+
+.image_graphe{
+    height: 50rem;
+}
+.image_graphe img{
+    margin-top: -5rem;
+}
+
+.container_graphe a{
+    font-weight: 300;
+    color: var(--color-primary);
+    background-color: var(--color-jaune);
+    padding: 12px 32px;
+    font-size: 30px;
+}
+
+.stat_graphe{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.stat_graphe .client{
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.stat_graphe .partenaire{
+    font-size: 72px;
+    font-weight: bold;
+    color: var(--color-jaune);
+}
+
+.stat_graphe .opacitée{
+    color: var(--color-jaune);
+}
+
+.stat_graphe .campagne{
+    font-size: 72px;
+    font-weight: bold;
+}
+
+/*===========section stat ===========*/
+
+#croissance_stat{
+    margin-top: 10rem;
+}
+.container_stat{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: white;
+}
+
+.stat_desc h2{
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.stat_desc p{
+    padding: 2rem 0rem 2rem 0rem;
+    font-weight: 100;
+}
+
+.stat_desc a{
+    color: var(--color-jaune);
+    font-weight: bold;
+}
+
+/*===========section services ===========*/
+
+.container_services h2{
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    color: white;
+}
+
+.container_servicess{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.service_webdesign{
+    border: .5px solid white;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+.service_webdesign img{
+    width: 4rem;
+}
+
+.service_webdesign h3{
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    color: white;
+}
+
+.service_webdesign p{
+    padding: 2rem 0rem 2rem 0rem;
+    color: white;
+}
+
+.service_consulte{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #FCD402;
+}
+
+/*=============objetif===============*/
+/*.container_objectif{
+    /*border: .5px solid white;
+    border-radius: 2rem;*/
+
+.objectifs{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.obje_desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.obje_desc h2{
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: white;
+}
+
+/*===============blogs===============*/
+
+.container_blogs h2{
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: white;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+.blog{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+.blog_pre{
+    display: flex;
+    flex-direction: column;
+    border: .5px solid white;
+}
+
+.blog_image img{
+    height: 100%;
+    width: 100%;
+}
+.blog_desc{
+    color: white;
+    padding: 2rem;
+}
+
+.blog_desc h3{
+    font-size: 1.5rem;
+}
+
+.blog_desc p{
+    padding: 2rem 0rem 2rem 0rem;
+    opacity: .5;
+}
+
+.blog_desc a{
+    font-weight: bold;
+    color: var(--color-jaune);
+}
+
+.container_blogs .blogs_plus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    color: var(--color-jaune);
+    font-weight: bold;
+}
+
+/*=========accueil===================*/
+.acceil_image img{
+    height: 20rem;
+}
+
+/*========footer=========*/
+hr{
+    background-color: white;
+    height: .1rem;
+    opacity: .2;
+}
+.infos{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+.contact h3{
+    font-size: 1.5rem;
+}
+.contact p{
+    opacity: .5;
+}
+.blogues h3{
+    font-size: 1.5rem;
+}
+.blogues p{
+    opacity: .5;
+}
+.sociaux h3{
+    font-size: 1.5rem;
+}
+.sociaux p{
+    opacity: .5;
+}
+.expertises h3{
+    font-size: 1.5rem;
+}
+.expertises p{
+    opacity: .5;
+}
+
+.signature p{
+    color: white;
+    opacity: .8;
+    text-align: center;
+    padding: 2rem 0rem 2rem 0rem;
+}
+/*===========media tablle ===========*/
+@media screen and (max-width: 1024px) {
+    .container{
+        width: var(--container-width-md);
+    }
+    .nav_logo{
+        margin-left: 2rem;
+    }
+    
+    nav button{
+        display: inline-block;
+        margin-right: 1.4rem;
+        background: transparent;
+        color: var(--color-white);
+        cursor: pointer;
+        font-size: 2.4rem;
+    }
+    .nav_container{
+        position: relative;
+        width: 100vw;
+    }
+    .nav_menu{
+        position: fixed;
+        top: 5rem;
+        right: 0;
+        height: fit-content;
+        width: 18rem;
+        flex-direction: column;
+        gap: 0;
+        z-index: 3;
+        display: none; 
+    }
+    .nav-contact{
+        display: none;
+    }
+    .nav_menu li{
+        width: 100%;
+        height: 5.4rem;
+        animation: flipNav 200ms ease forwards;
+        transform-origin: top;
+    }
+    .nav_menu li:nth-child(2){
+        animation-delay: 100ms;
+    }
+    .nav_menu li:nth-child(3){
+        animation-delay: 200ms;
+    }
+    .nav_menu li:nth-child(4){
+        animation-delay: 300ms;
+    }
+    .nav_menu li:nth-child(5){
+        animation-delay: 400ms;
+    }
+    @keyframes flipNav {
+        from{
+            transform: rotateX(90deg);
+            opacity: 0;
+        }
+        to{
+            transform: rotateX(0deg);
+        }
+    }
+    .nav_menu li a{
+        background: var(--color-bleu);
+        color: white;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: -2rem 2rem 2rem rgba(0,0,0,0.2);
+    }
+    .nav_menu li a:hover{
+        background: var(--color-primary);
+        color: var(--color-bleu);
+    }
+   
+    nav button{
+        display: inline-block;
+        margin-right: 1.4rem;
+        background: transparent;
+        color: var(--color-white);
+        cursor: pointer;
+        font-size: 2.4rem;
+    }
+    nav button#close-menu-btn{
+        display: none;
+    }
+
+    /*==============section 1 (africa)==================*/
+    .container_message_a{
+        color: white;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    /*==============section 2 (africa)==================*/
+    .container_africa{
+        color: white;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .message_africa h2{
+        font-size: 45px;
+        font-weight: 500;
+        line-height: 1.4;
+    }
+    /*==============section 3 (africa)==================*/
+    .stat_graphe{
+        margin-top: -20%;
+    }
+
+    /*===========section services ===========*/
+    .container_servicess{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /*===============blogs===============*/
+    .blog{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+}
+
+
+/*============ PHONE ==============*/
+@media screen and (max-width: 600px) {
+    .nav_container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container{
+        width: var(--container-width-sm);
+    }
+    .nav_logo{
+        width: 3rem;
+        margin-left: -.7%;
+    }
+    .nav_container button{
+        font-size: 2rem;
+        margin-right: -2%;
+    }
+
+    /*===========header============*/
+
+    .container_header .titre_principal{
+        font-size: 24px;   
+    }
+
+    
+    /*==============section 1 (africa)==================*/
+    .container_message_a{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text_desc_MA h2{
+        font-size: 30px;
+    }
+    .image_MA{
+        display: none;
+    }
+
+    /*==============section 2 (africa)==================*/
+    .container_africa{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .container_africa h2{
+        font-size: 30px;
+    }
+
+    /*==============section 3 (africa)==================*/
+    .text_graphe h2{
+        font-size: 30px;
+    }
+    
+
+    .container_graphe a{
+        font-weight: 300;
+        color: var(--color-primary);
+        background-color: var(--color-jaune);
+        padding: 12px 32px;
+        font-size: 20px;
+    }
+
+    .image_graphe img{
+        margin-top: 2rem;
+    }
+
+
+    .stat_graphe{
+        margin-top: -35rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .stat_graphe .client{
+        font-size: 72px;
+        font-weight: bold;
+    }
+
+    .stat_graphe .partenaire{
+        font-size: 72px;
+        font-weight: bold;
+        color: var(--color-jaune);
+    }
+
+    .stat_graphe .opacitée{
+        color: var(--color-jaune);
+    }
+
+    .stat_graphe .campagne{
+        font-size: 72px;
+        font-weight: bold;
+    }
+
+    /*===========section stat ===========*/
+    .container_stat{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        text-align: center;
+    }
+    .stat_desc h2{
+        margin-top: -6rem;
+        font-size: 30px;
+    }
+
+    /*===========section services ===========*/
+    .title_service h2{
+        font-size: 30px;
+    }
+    .container_servicess{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    /*=============objetif===============*/
+    .obje_desc h2{
+        display: none;
+    }
+    .objectifs{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*===============blogs===============*/
+    .title_blogs h2{
+        font-size: 30px;
+    }
+    .blog{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 2rem;
+    }
+
+    /*========footer=========*/
+    .infos{
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+    }
+}

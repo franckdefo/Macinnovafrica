@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+section{
+    padding: 6rem auto;
+    margin: 5rem 0;
+  }
+
+.icon_infos{
+    margin-top: 2rem;
+}
+.icon_infos a img{
+    width: 2rem;
+    height: 2rem;
+    background: var(--color-blanc);
+    border-radius: 3em;
+}
+.icon_infos a{
+    color: #FFFFFF;
+    font-size: 2rem;
+}
+/*thème de couleur*/
+
+:root{
+    --color-primary : #121212;
+    --color-bleu : #06B9DA;
+    --color-jaune : #FCD402;
+    --color-black : black;
+    --color-white : white;
+
+    --container-width-lg : 84%;
+    --container-width-md : 90%;
+    --container-width-sm : 92%;
+
+    --transition:all 400ms ease;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat';
+    color: var(--color-bg-1);
+    background: var(--color-primary);
+    line-height: 1.7;
+}
+
+h3{
+    line-height: 1.1;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 24px;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+a{
+    color: var(--color-noir);
+    
+}
+
+
+.container{
+    width: var(--container-width-lg);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+
+/*========================================*/
+nav{
+    height: 5rem;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    color: white;
+}
+
+nav button{
+    display: none;
+}
+
+.window-scrolled{
+    background: var(--color-primary);
+    border-bottom: 0.2rem solid var(--color-bg-3);
+    height: 7rem;
+}
+
+.nav_logo{
+    width: 4rem;
+}
+
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_menu{
+    display: flex;
+    gap: 2rem;
+    font-size: 14;
+}
+.nav_menu li:hover{
+    color: var(--color-jaune);
+}
+
+.nav-contact{
+    background-color: #06B9DA;
+    padding: 12px 32px;
+    border-radius: 10px;
+}
+/*==============header============*/
+
+.header_container{
+    padding-top: 10rem;
+}
+
+.header_container img{
+    height: 30rem;
+}
+
+/*===============section===========*/
+.seo_container{
+    color: white;
+}
+
+.seo_image img{
+    height: 20rem;
+    width: 25rem;
+}
+
+.seo_description h2{
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.seo_description p{
+    padding-top: 2rem;
+    font-size: 20px;
+}
+
+
+/*===============blogs===============*/
+
+.container_blogs h2{
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: white;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+.blog{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+.blog_pre{
+    display: flex;
+    flex-direction: column;
+    border: .5px solid white;
+}
+
+.blog_image img{
+    height: 100%;
+    width: 100%;
+}
+.blog_desc{
+    color: white;
+    padding: 2rem;
+}
+
+.blog_desc h3{
+    font-size: 1.5rem;
+}
+
+.blog_desc p{
+    padding: 2rem 0rem 2rem 0rem;
+    opacity: .5;
+}
+
+.blog_desc a{
+    font-weight: bold;
+    color: var(--color-jaune);
+}
+
+.container_blogs .blogs_plus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    color: var(--color-jaune);
+    font-weight: bold;
+}
+
+/*========footer=========*/
+hr{
+    background-color: white;
+    height: .1rem;
+    opacity: .2;
+}
+.infos{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+.contact h3{
+    font-size: 1.5rem;
+}
+.contact p{
+    opacity: .5;
+}
+.blogues h3{
+    font-size: 1.5rem;
+}
+.blogues p{
+    opacity: .5;
+}
+.sociaux h3{
+    font-size: 1.5rem;
+}
+.sociaux p{
+    opacity: .5;
+}
+.expertises h3{
+    font-size: 1.5rem;
+}
+.expertises p{
+    opacity: .5;
+}
+
+.signature p{
+    color: white;
+    opacity: .8;
+    text-align: center;
+    padding: 2rem 0rem 2rem 0rem;
+}
